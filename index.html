@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My E-Commerce Store</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <div class="dropdown">
+      <a href="#products">Products ▼</a>
+      <div class="dropdown-content">
+        <a href="#phones">Phones</a>
+        <a href="#earphones">Earphones</a>
+        <a href="#laptops">Laptops</a>
+        <a href="#decor">Home Decor</a>
+        <a href="#fashion">Fashion</a>
+        <a href="#study">Study</a>
+      </div>
+    </div>
+     <a href="#cart-section">🛒 Cart (<span id="cart-count">0</span>)</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <div class="product">
+  <div class="items-container">
+    <div id="phones">
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71Ndw3SUPyL._AC_UY436_FMwebp_QL65_.jpg" alt="Product 1">
+      <h3>Vivo Y39 5G (Lotus Purple, 8GB RAM, 256GB Storage)</h3>
+      <p>₹18,999</p>
+      <button data-item="Vivo Y39 5G">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/41434AWd7gL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 2">
+      <h3>Redmi Note 14 5G (Mystique White, 8GB RAM 256GB Storage)</h3>
+      <p>₹19,999</p>
+      <button data-item="Redmi Note 14 5G">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/41uR6Pme6NL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 3">
+      <h3>Samsung Galaxy A55 5G (Awesome Iceblue, 8GB RAM, 128GB Storage)</h3>
+      <p>₹25,999</p>
+      <button data-item="Samsung Galaxy A55 5G">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71ZJ6bsARtL._AC_UY436_FMwebp_QL65_.jpg" alt="Product 4">
+      <h3>Motorola Edge 50 Fusion 5G (Forest Blue, 8GB RAM, 128GB Storage)</h3>
+      <p>₹19,534</p>
+      <button data-item="Motorola Edge 50 Fusion 5G">Add to Cart</button>
+    </div>
+     <div class="item">
+      <img src="https://m.media-amazon.com/images/I/417odtnpERL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 5">
+      <h3>OnePlus Nord CE4 (Dark Chrome, 8GB RAM, 128GB Storage)</h3>
+      <p>₹21,997</p>
+      <button data-item="OnePlus Nord CE4 ">Add to Cart</button>
+    </div>
+    </div>
+    
+
+    <div id="earphones">
+         <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71RFdy6y6LL._SX679_.jpg" alt="Product 6">
+      <h3>boAt Airdopes 141, v5.1 Bluetooth Earbuds, TWS Ear Buds Wireless Earphones with mic (Bold Black)</h3>
+      <p>₹799</p>
+      <button data-item="boAt Airdopes 141">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/31ptXJDnWxL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 7">
+      <h3>boAt Rockerz 255 Z Plus, App Support, IPX4 BT v5.3, Bluetooth Neckband, Wireless with Mic Earphones (Active/Classic Black)</h3>
+      <p>₹999</p>
+      <button data-item="boAt Rockerz 255 Z Plus">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/31ztpzzaDSL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 8">
+      <h3>boAt Rockerz 450/450R, 15 HRS Battery, Bluetooth Headphones, Wireless Headphone with Mic (Luscious Black)</h3>
+      <p>₹1,299</p>
+      <button data-item="boAt Rockerz 450/450R">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/7199EhD4w8L._AC_UL640_FMwebp_QL65_.jpg" alt="Product 9">
+      <h3>Boult Audio Astra Truly Wireless in Ear Earbuds with 48H Playtime, Made in India (Black GlossboAt Airdopes 141, v5.1 Bluetooth Earbuds)</h3>
+      <p>₹1,299</p>
+      <button data-item="Boult Audio Astra">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/711l4y8aNlL._AC_UL640_FMwebp_QL65_.jpg" alt="Product 10">
+      <h3>boAt Rockerz 480 w/RGB LEDs, 6 Light Modes, Bluetooth Headphones(Black Sabre)</h3>
+      <p>₹1,599</p>
+      <button data-item="boAt Rockerz 480 w/RGB LEDs">Add to Cart</button>
+    </div>
+    </div>
+
+
+    <div id="laptops">
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71CjP9jmqZL._SX679_.jpg" alt="Product 11">
+      <h3>Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 8-core GPU, 16GB Unified Memory, 256GB) - Midnight</h3>
+      <p>₹91,990</p>
+      <button data-item="Apple 2025 MacBook Air">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71ueiAj0ZfL._SX679_.jpg" alt="Product 12">
+      <h3>ASUS Zenbook S16, 16" Touch Screen, 3K OLED, AMD Ryzen AI 7 Octa Core 350,Copilot+ AI PC (24GB/1TB/AMD Radeon iGPU/Windows 11/M365 Basic (1Year)*/Office Home 2024/Zumaia Gray/1.5 Kg), UM5606KA-RJ109WS</h3>
+      <p>₹1,49,990</p>
+      <button data-item="ASUS Zenbook S16">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/41p28PKLi9L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 13">
+      <h3>HP OmniBook X Laptop, Snapdragon® X Elite X1E-78-100,14inch(35.6 cm),2.2K Touch Display,IPS,16GB LPDDR5x,1TB SSD,Next Gen Windows, Copilot +,Blue,1.34 kg,14-fe0121QU</h3>
+      <p>₹1,24,563</p>
+      <button data-item="HP OmniBook X Laptop">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" alt="Product 14">
+      <h3>Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</h3>
+      <p>₹59,990</p>
+      <button data-item="Apple MacBook Air Laptop">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/718zbAOG7HL._SX679_.jpg" alt="Product 15">
+      <h3>HP Victus, 12th Gen Intel Core i7-12650H,NVIDIA RTX 3050, 16GB DDR4, 512GB SSD (Win11, Office21, Blue,2.3kg) 144Hz, 9MS, IPS, 15.6-inch(39.6cm), Flicker-Free Gaming Laptop, Enhanced Cooling, fa1382TX</h3>
+      <p>₹68,990</p>
+      <button data-item="HP Victus">Add to Cart</button>
+    </div>
+    </div>
+
+
+    <div id="decor">
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/51kSS1Rv4zL._SY445_SX342_QL70_FMwebp_.jpg" alt="Product 16">
+      <h3>Desidiya Universe Crystal Ball Night Light,2.4 Inch Glass Ball Night LED Lamp with Woodern Base,Decorations Gifts for Men,Women,Kids,Boys,Girls,Teens</h3>
+      <p>₹189</p>
+      <button data-item="Desidiya Universe Crystal Ball Night Light">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/51DmApkA36L.jpg" alt="Product 17">
+      <h3>Oblivion Buddha Monk Figurines Set 4Pc – Multicolour Polyresin Decorative Statues for Home Decor, Spiritual Yard Art & Unique Gift Items</h3>
+      <p>₹124</p>
+      <button data-item="Oblivion Buddha Monk Figurines Set 4Pc">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/710jjgj13jL._SX679_.jpg" alt="Product 18">
+      <h3>amazon basics Artificial Plants with Pot|Realistic Looking| Multi Variety |Durable Plastic | No Maintenance | Home Decor | Dimensions: 5 cm X 13 cm (Pack of 8)</h3>
+      <p>₹329</p>
+      <button data-item="amazon basics Artificial Plants with Pot">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/61-Ce809rhL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 19">
+      <h3>Ekhasa Aura Series Marble Dust Radha Krishna Murti (8 inch, Medium Size) | Resin Radha Krishna Idol | Radhe Krishna ki Murti for Pooja, White, Religious</h3>
+      <p>₹1,899</p>
+      <button data-item="Radha Krishna Murti">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/81Ps3+Ki45L._SX679_.jpg" alt="Product 20">
+      <h3>KRAFTSKALA Set of 3 Metal Figurine Dancers Home Decor Item for Living Room, Bedroom, Wedding Festive Housewarming Gift Showpiece Rajasthani Dancing Dolls</h3>
+      <p>₹1,249</p>
+      <button data-item="Set of 3 Metal Figurine Dancers Home Decor Item for Living Room">Add to Cart</button>
+    </div>
+
+
+    <div id="fashion">
+        <div class="item">
+      <img src="https://m.media-amazon.com/images/I/61mwRo02gPL._SX679_.jpg" alt="Product 21">
+      <h3>NNIBOSI Men's Watches Analog Minimalist Black Dial Watches for Men Business Chronograph Casual Watches</h3>
+      <p>₹3,298</p>
+      <button data-item="Men's Watches">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/81gfzrOzSJL._SX679_.jpg" alt="Product 22">
+      <h3>Titan Crest 1.43” AMOLED Smart Watch with BT Calling, Smartwatch for Men and Women - Rose Gold Mesh Strap</h3>
+      <p>₹4,999</p>
+      <button data-item="Women's Watches">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/715nDdTQL+L._SX679_.jpg" alt="Product 23">
+      <h3>Nermosa Women Printed Anarkali Kurta and Pant Set with Dupatta</h3>
+      <p>₹799</p>
+      <button data-item="Kurtha set">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/51A--HMRXRL.jpg" alt="Product 24">
+      <h3>FINIVO FASHION Textured Shirts for Men || Casual Shirt for Men || Shirt for Men|| Plain Shirts for Men</h3>
+      <p>₹499</p>
+      <button data-item="Shirts for Men">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/71KPM3ZsGGL._SY695_.jpg" alt="Product 25">
+      <h3>Bacca Bucci Women Lace Up Sneaker Shoes</h3>
+      <p>₹1,399</p>
+      <button data-item="Shoes">Add to Cart</button>
+    </div>
+    </div>
+    
+
+    <div id="study">
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/716rm-dqF-L._SX679_.jpg" alt="Product 21">
+      <h3>Faber-Castell Creative Studio Watercolours 5 ml Set of 12</h3>
+      <p>₹185</p>
+      <button data-item="Watercolours">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/51zVY7PBCGL.jpg" alt="Product 22">
+      <h3>NISHI - Medium Kids Backpack Waterproof Backpack, Girls & Women Stylish Trendy College, School & College Bag</h3>
+      <p>₹399</p>
+      <button data-item="Waterproof Backpack">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/41PK2Uv-8rL._SY445_SX342_QL70_FMwebp_.jpg" alt="Product 23">
+      <h3>Fulminare LED Desk Lamp Dimmable Table Lamp Reading Lamp with USB Charging Port 3 Colour Mode,Touch Control Eye Caring, Desk Lamp for Study</h3>
+      <p>₹499</p>
+      <button data-item="Table Lamp">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/81i3k6qgIjL._SX679_.jpg" alt="Product 24">
+      <h3>APPUCOCO Adjustable Metal Bookend For Tabletop Heavy Books Tiered Shelf Organizer Holder For Home Storage, Library With Pen Holder (Extends Up To 15 Inches) - Black</h3>
+      <p>₹499</p>
+      <button data-item="Shelf Organizer Holder For Home Storage">Add to Cart</button>
+    </div>
+    <div class="item">
+      <img src="https://m.media-amazon.com/images/I/61Dwy8XkQdL._SX679_.jpg" alt="Product 25">
+      <h3>FreshDcart Office Desk Organizer - Multifunctional 6-Compartment Mobile Pen Stand, Mobile Holder for Table Office (Grey Color Pack Of 1)</h3>
+      <p>₹399</p>
+      <button data-item="Office Desk Organizer">Add to Cart</button>
+    </div>
+    </div>
+  </div>
+  </>
+
+  <section id="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+  </section>
+
+  <div id="contact-wrapper">
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: kavyajogi03@gmail.com</p>
+      <p>Address: Andhra Pradesh, India</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; @2025 My E-Commerce Store. All rights reserved.
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
